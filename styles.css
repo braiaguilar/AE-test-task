@@ -72,3 +72,38 @@ body {
     padding: 10px;
     background-color: #f0f0f0;
 }
+
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list ul {
+        flex-direction: column;
+    }
+
+    .nav-list a {
+        margin: 0;
+        padding: 15px;
+    }
+}
