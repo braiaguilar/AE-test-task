@@ -1,8 +1,6 @@
 # Alpha Efficiency - Test Task | Web Developer position
 A responsive web template with a burger menu, countdown feature, and FAQs dropdown. Built with HTML, CSS, and JS for a visually appealing, cross-device experience. Ideal for quick integration into diverse web projects.
 
-# Responsive Burger Menu with Countdown and FAQs
-
 ## Overview
 
 This project is a responsive web template featuring a burger menu, countdown timer, and a Frequently Asked Questions (FAQs) dropdown. Developed with HTML, CSS, and JavaScript, this template ensures a visually appealing and user-friendly experience across various devices.
@@ -38,13 +36,5 @@ This project is a responsive web template featuring a burger menu, countdown tim
 ## Customize Styles
 
 Feel free to modify the styles in the `styles.css` file to align with your project's design guidelines. Customize colors, fonts, and layout as needed.
-
-## Contributing
-
-Contributions are welcome! Feel free to submit issues, feature requests, or pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---

@@ -1,0 +1,74 @@
+/* Reset some default styles */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.burger-icon {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* Countdown Styles */
+.countdown {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* FAQ Drop-down Styles */
+.faq-dropdown {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.faq-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
