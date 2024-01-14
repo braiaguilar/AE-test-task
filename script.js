@@ -1,33 +1,45 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Burger Menu Functionality
-    const burgerIcon = document.getElementById('burger-icon');
-    const navList = document.querySelector('.nav-list ul');
+function toggleNav() {
+    let nav = document.querySelector('nav');
+    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+}
 
-    burgerIcon.addEventListener('click', function () {
-        navList.classList.toggle('show');
-    });
+// Countdown functionality
+function updateCountdown() {
+    let now = new Date();
+    let endDate = new Date('2024-02-14T23:59:59');
+    let timeDiff = endDate - now;
 
-    // Countdown Functionality
-    const countdownElement = document.getElementById('countdown');
-    const countdownDate = new Date("January 1, 2025 00:00:00").getTime(); // Set your countdown date here
+    if (timeDiff <= 0) {
+        clearInterval(countdownInterval);
+        document.getElementById('countdown').textContent = 'Offer Expired!';
+    } else {
+        let days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+            (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
-    setInterval(function () {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
+        document.getElementById('countdown').textContent =
+            days +
+            ' Days ' +
+            hours +
+            ' Hours ' +
+            minutes +
+            ' Minutes ' +
+            seconds +
+            ' Seconds';
+    }
+}
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+let countdownInterval = setInterval(updateCountdown, 1000);
+updateCountdown(); // Initial update
 
-        countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }, 1000);
+// FAQ dropdown
+let faqDropdown = document.querySelector('.faq-dropdown');
+let faqContent = document.querySelector('.faq-content');
 
-    // FAQ Dropdown Functionality
-    const faqBtn = document.getElementById('faq-btn');
-    const faqContent = document.getElementById('faq-content');
-
-    faqBtn.addEventListener('click', function () {
-        faqContent.classList.toggle('show');
-    });
+faqDropdown.addEventListener('click', function () {
+    faqContent.style.display =
+        faqContent.style.display === 'block' ? 'none' : 'block';
 });

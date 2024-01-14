@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <title>Your Page Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script>
+        <title>Test Task</title>
+    </head>
+    <body>
+        <header>
+            <h1>Alpha Efficiency - Test Task</h1>
+        </header>
 
-    <!-- Burger Menu -->
-    <div class="burger-menu">
-        <div class="burger-icon" id="burger-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div class="burger-menu" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <nav class="nav-list">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <!-- Add more menu items as needed -->
-            </ul>
+
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Book Online</a>
+            <a href="#">Weight Loss Programs</a>
+            <a href="#">Real Patient Stories</a>
+            <a href="#">Locations</a>
+            <a href="#">Blog</a>
+            <a href="#">Shop</a>
+            <a href="#">Subscription</a>
         </nav>
-    </div>
 
-    <!-- Countdown -->
-    <div class="countdown" id="countdown"></div>
-
-    <!-- FAQ Drop-down -->
-    <div class="faq-dropdown">
-        <button class="faq-btn" id="faq-btn">FAQs</button>
-        <div class="faq-content" id="faq-content">
-            <!-- Placeholder FAQ items -->
-            <p>Q: What is Lorem Ipsum?</p>
-            <p>A: Lorem Ipsum is simply dummy text...</p>
-            <!-- Add more FAQ items as needed -->
+        <div class="countdown">
+            <p>Your offer ends in: <span id="countdown"></span></p>
         </div>
-    </div>
 
-    <!-- Rest of your content goes here -->
-
-</body>
+        <div class="faq-dropdown">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>
+                    Nullam in elit eu nulla ullamcorper tincidunt vitae non
+                    augue.
+                </p>
+                <p>
+                    Phasellus ultrices ante eu tortor gravida, eu tristique
+                    justo malesuada.
+                </p>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </div>
+    </body>
 </html>
