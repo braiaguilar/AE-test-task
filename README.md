@@ -20,7 +20,7 @@ This project is a responsive web template featuring a burger menu, countdown tim
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/Responsive-Burger-Countdown-FAQ.git
+   git clone https://github.com/braiaguilar/AE-test-task.git
    ```
 
 2. **Customize Content:**
